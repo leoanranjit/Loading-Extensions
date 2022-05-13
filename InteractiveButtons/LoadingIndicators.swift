@@ -8,18 +8,45 @@
 import Foundation
 import UIKit
 
-extension UIButton{
+class InteractiveButtons: UIButton{
     
-    func startLoading(){
-        let indicator = UIActivityIndicatorView(style: .medium)
-        indicator.hidesWhenStopped = true
-        indicator.startAnimating()
-        indicator.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: 0).isActive = true
-        indicator.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0).isActive = true
-        self.addSubview(indicator)
-        self.setTitle("", for: .normal)
+    let indicator = UIActivityIndicatorView(style: .medium)
+    var btnTitle = ""
+    
+    func startLoading(color: UIColor){
+        UIView.animate(withDuration: 0.3) {
+            self.btnTitle = self.title(for: .normal) ?? ""
+            self.indicator.translatesAutoresizingMaskIntoConstraints = false
+            self.addSubview(self.indicator)
+            self.indicator.startAnimating()
+            self.indicator.color = color
+            self.indicator.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: 0).isActive = true
+            self.indicator.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0).isActive = true
+            self.isUserInteractionEnabled = false
+            self.setTitle("", for: .normal)
+        }
     }
+    
     func stopLoading(){
-        self.setTitle(self.title(for: .normal), for: .normal)
+        indicator.removeFromSuperview()
+        self.isUserInteractionEnabled = true
+        self.setTitle(btnTitle, for: .normal)
     }
 }
+
+extension UIViewController{
+    
+    func startLoading(color: UIColor) {
+        let indicator = UIActivityIndicatorView(style: .medium)
+        indicator.color = color
+        indicator.startAnimating()
+        let barButton = UIBarButtonItem(customView: indicator)
+        self.navigationItem.setRightBarButton(barButton, animated: true)
+    }
+    
+    func stopLoading(){
+        self.navigationItem.setRightBarButton(UIBarButtonItem(), animated: true)
+    }
+}
+
+
