@@ -18,10 +18,10 @@ class ViewController: UIViewController {
 
     @IBAction func btnLoadAction(_ sender: Any) {
         startLoading(color: .black)
-        btnLoad.startLoading(color: .white)
+        btnLoad.startLoading()
     }
     @IBAction func btnStopLoading(_ sender: Any) {
-        stopLoading()
+        startLoading(color: .black)
         btnLoad.stopLoading()
     }
     

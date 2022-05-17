@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FD14BF2693F3FB390EE70F0 /* Pods_InteractiveButtons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF0131F6BD81B7B320FBA41 /* Pods_InteractiveButtons.framework */; };
 		6D5DB964282E889A00869FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5DB963282E889A00869FED /* AppDelegate.swift */; };
 		6D5DB966282E889A00869FED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5DB965282E889A00869FED /* SceneDelegate.swift */; };
 		6D5DB968282E889A00869FED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5DB967282E889A00869FED /* ViewController.swift */; };
 		6D5DB96B282E889A00869FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5DB969282E889A00869FED /* Main.storyboard */; };
 		6D5DB96D282E889B00869FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D5DB96C282E889B00869FED /* Assets.xcassets */; };
 		6D5DB970282E889B00869FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5DB96E282E889B00869FED /* LaunchScreen.storyboard */; };
-		6D5DB978282E889E00869FED /* LoadingIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5DB977282E889E00869FED /* LoadingIndicators.swift */; };
+		6D5DB978282E889E00869FED /* InteractiveButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5DB977282E889E00869FED /* InteractiveButtons.swift */; };
+		6D935A99282FE3F300E8D186 /* black.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D935A98282FE3F300E8D186 /* black.json */; };
+		6D935AA1282FE48E00E8D186 /* white.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D935AA0282FE48E00E8D186 /* white.json */; };
+		6D935AA4282FE68700E8D186 /* black1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D935AA2282FE68700E8D186 /* black1.json */; };
+		6D935AA5282FE68700E8D186 /* white1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D935AA3282FE68700E8D186 /* white1.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CF0131F6BD81B7B320FBA41 /* Pods_InteractiveButtons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InteractiveButtons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E665CB22AFF1F5C40CC4581 /* Pods-InteractiveButtons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InteractiveButtons.release.xcconfig"; path = "Target Support Files/Pods-InteractiveButtons/Pods-InteractiveButtons.release.xcconfig"; sourceTree = "<group>"; };
 		6D5DB960282E889A00869FED /* InteractiveButtons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveButtons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5DB963282E889A00869FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D5DB965282E889A00869FED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +32,12 @@
 		6D5DB96C282E889B00869FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D5DB96F282E889B00869FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D5DB971282E889B00869FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D5DB977282E889E00869FED /* LoadingIndicators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicators.swift; sourceTree = "<group>"; };
+		6D5DB977282E889E00869FED /* InteractiveButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveButtons.swift; sourceTree = "<group>"; };
+		6D935A98282FE3F300E8D186 /* black.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = black.json; sourceTree = "<group>"; };
+		6D935AA0282FE48E00E8D186 /* white.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = white.json; sourceTree = "<group>"; };
+		6D935AA2282FE68700E8D186 /* black1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = black1.json; sourceTree = "<group>"; };
+		6D935AA3282FE68700E8D186 /* white1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = white1.json; sourceTree = "<group>"; };
+		7466E0E1E5E64F63EF6B0E0E /* Pods-InteractiveButtons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InteractiveButtons.debug.xcconfig"; path = "Target Support Files/Pods-InteractiveButtons/Pods-InteractiveButtons.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD14BF2693F3FB390EE70F0 /* Pods_InteractiveButtons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A25996E1B5CA6CBBC529EA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CF0131F6BD81B7B320FBA41 /* Pods_InteractiveButtons.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6D5DB957282E889A00869FED = {
 			isa = PBXGroup;
 			children = (
 				6D5DB962282E889A00869FED /* InteractiveButtons */,
 				6D5DB961282E889A00869FED /* Products */,
+				8E91F9C2E049B4049CDD2951 /* Pods */,
+				5A25996E1B5CA6CBBC529EA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +81,11 @@
 		6D5DB962282E889A00869FED /* InteractiveButtons */ = {
 			isa = PBXGroup;
 			children = (
-				6D5DB977282E889E00869FED /* LoadingIndicators.swift */,
+				6D935A98282FE3F300E8D186 /* black.json */,
+				6D935AA2282FE68700E8D186 /* black1.json */,
+				6D935AA3282FE68700E8D186 /* white1.json */,
+				6D935AA0282FE48E00E8D186 /* white.json */,
+				6D5DB977282E889E00869FED /* InteractiveButtons.swift */,
 				6D5DB963282E889A00869FED /* AppDelegate.swift */,
 				6D5DB965282E889A00869FED /* SceneDelegate.swift */,
 				6D5DB967282E889A00869FED /* ViewController.swift */,
@@ -70,6 +97,15 @@
 			path = InteractiveButtons;
 			sourceTree = "<group>";
 		};
+		8E91F9C2E049B4049CDD2951 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7466E0E1E5E64F63EF6B0E0E /* Pods-InteractiveButtons.debug.xcconfig */,
+				4E665CB22AFF1F5C40CC4581 /* Pods-InteractiveButtons.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D5DB974282E889B00869FED /* Build configuration list for PBXNativeTarget "InteractiveButtons" */;
 			buildPhases = (
+				CB17643CC86A2C0BFA21F478 /* [CP] Check Pods Manifest.lock */,
 				6D5DB95C282E889A00869FED /* Sources */,
 				6D5DB95D282E889A00869FED /* Frameworks */,
 				6D5DB95E282E889A00869FED /* Resources */,
+				0F8AC54DBEC6E106E2F07B61 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,20 +166,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D935A99282FE3F300E8D186 /* black.json in Resources */,
+				6D935AA5282FE68700E8D186 /* white1.json in Resources */,
 				6D5DB970282E889B00869FED /* LaunchScreen.storyboard in Resources */,
 				6D5DB96D282E889B00869FED /* Assets.xcassets in Resources */,
 				6D5DB96B282E889A00869FED /* Main.storyboard in Resources */,
+				6D935AA1282FE48E00E8D186 /* white.json in Resources */,
+				6D935AA4282FE68700E8D186 /* black1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F8AC54DBEC6E106E2F07B61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InteractiveButtons/Pods-InteractiveButtons-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InteractiveButtons/Pods-InteractiveButtons-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InteractiveButtons/Pods-InteractiveButtons-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB17643CC86A2C0BFA21F478 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InteractiveButtons-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D5DB95C282E889A00869FED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D5DB978282E889E00869FED /* LoadingIndicators.swift in Sources */,
+				6D5DB978282E889E00869FED /* InteractiveButtons.swift in Sources */,
 				6D5DB968282E889A00869FED /* ViewController.swift in Sources */,
 				6D5DB964282E889A00869FED /* AppDelegate.swift in Sources */,
 				6D5DB966282E889A00869FED /* SceneDelegate.swift in Sources */,
@@ -286,6 +370,7 @@
 		};
 		6D5DB975282E889B00869FED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7466E0E1E5E64F63EF6B0E0E /* Pods-InteractiveButtons.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +399,7 @@
 		};
 		6D5DB976282E889B00869FED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E665CB22AFF1F5C40CC4581 /* Pods-InteractiveButtons.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
